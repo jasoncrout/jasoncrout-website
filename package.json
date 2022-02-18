@@ -1,0 +1,27 @@
+{
+  "name": "jasoncrout-website",
+  "version": "1.0.0",
+  "description": "my personal website",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasoncrout/jasoncrout-website.git"
+  },
+  "author": "Jason Crout",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jasoncrout/jasoncrout-website/issues"
+  },
+  "homepage": "https://github.com/jasoncrout/jasoncrout-website#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "engines": {
+    "node": "16.14.0"
+  }
+}
