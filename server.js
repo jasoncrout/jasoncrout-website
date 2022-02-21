@@ -6,6 +6,10 @@ const app = express();
 
 app.use(express.static(path.join(__dirname, "client", "build")));
 
+app.get("/robots.txt", (req, res) => {
+    res.sendFile(__dirname + "/robots.txt");
+});
+
 app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname, "client", "build", "index.html"));
 });
