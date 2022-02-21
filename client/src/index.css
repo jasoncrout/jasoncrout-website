@@ -13,9 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 h1.heading{
-  font-size: 5rem;
+  font-size: 4rem;
   margin-top: 4rem;
-}
-p {
-  font-size: 2rem;
 }

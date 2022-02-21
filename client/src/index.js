@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 
@@ -14,12 +13,12 @@ import ContactMe from "./routes/ContactMe";
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
-  <Routes>
-  <Route path="/" element={<App />} />
-    <Route path="about-me" element={<AboutMe />} />
-    <Route path="my-projects" element={<MyProjects />} />
-    <Route path="contact-me" element={<ContactMe />} />
-  </Routes>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="about-me" element={<AboutMe />} />
+      <Route path="my-projects" element={<MyProjects />} />
+      <Route path="contact-me" element={<ContactMe />} />
+    </Routes>
   </BrowserRouter>,
   rootElement
 );
